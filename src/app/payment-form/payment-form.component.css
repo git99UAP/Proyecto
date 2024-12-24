@@ -1,0 +1,69 @@
+/* payment-form.component.css */
+.container {
+  margin-top: 50px;
+  background-color: #0b0be6;  /* Fondo azul */
+  padding: 30px;
+  border-radius: 8px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h3.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Estilo para los botones */
+button {
+  width: 48%;  /* Ajustar el ancho de los botones */
+  background-color: #0f67da;  /* Color azul en el botón */
+  color: white;  /* Texto blanco */
+  border: none;
+  padding: 12px;
+  border-radius: 5px;  /* Bordes redondeados para el botón */
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 4%;  /* Separación entre los botones */
+  display: inline-block; /* Asegura que los botones estén en la misma línea */
+  text-align: center;
+  transition: background-color 0.3s ease;  /* Suaviza la transición del color */
+}
+
+/* El último botón no tendrá margen derecho */
+button:last-child {
+  margin-right: 0;
+}
+
+/* Efecto hover para ambos botones */
+button:hover {
+  background-color: #10cae2;  /* Efecto hover en el botón */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 5px;
+}
+
+input:focus {
+  border-color: #4CAF50;  /* Resalta el borde de entrada al hacer focus */
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}

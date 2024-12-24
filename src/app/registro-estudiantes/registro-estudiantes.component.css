@@ -1,0 +1,49 @@
+/* General */
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Fuente general */
+}
+
+.background-container {
+  background-image: url('https://www.empleo.gob.mx/assets/img/img-solicitud-mano.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Fondo semitransparente para el contenido */
+.content-overlay {
+  background: rgba(228, 13, 13, 0.6); /* Fondo oscuro semitransparente */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px; /* Máximo ancho para tablas más grandes */
+}
+
+/* Títulos */
+h2 {
+  color: #5517e6; /* Cambiar color del subtítulo */
+  font-size: 2.5rem; /* Aumentar tamaño */
+  font-family: 'Georgia', serif; /* Cambiar fuente a serif */
+  font-weight: bold; /* Hacer el texto en negrita */
+  margin-top: 1rem;
+}
+
+/* Etiquetas */
+label {
+  color: #390da0;
+  font-size: 1.2rem; /* Tamaño de letra para las etiquetas */
+  font-family: 'Tahoma', sans-serif; /* Fuente sans-serif */
+}
+
+/* Estilos adicionales */
+h2 {
+  font-size: 2.5rem; /* Tamaño más grande para el subtítulo */
+  color: #5517e6;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}

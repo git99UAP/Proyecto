@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+  }
+  
+ /* Imagen de fondo para toda la pantalla */
+.background-container {
+  background-image: url('https://www.larepublica.net/storage/images/2022/11/23/20221123075904.83ce0056-f9d2-40df-bc1b-e0405baf3bdd.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Fondo semitransparente para el contenido */
+.content-overlay {
+  background: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%; /* Opcional, puedes ajustarlo */
+  max-width: 1200px; /* Máximo ancho para tablas más grandes */
+}
+
+  

@@ -1,0 +1,52 @@
+<div class="container-fluid background-container">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Registro de Estudiantes Universitarios</h2>
+    <form [formGroup]="formularioEstudiante" (ngSubmit)="registrarEstudiante()">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" id="nombre" class="form-control" formControlName="nombre" placeholder="Ej: Juan Pérez" />
+        <div *ngIf="formularioEstudiante.get('nombre')?.invalid && formularioEstudiante.get('nombre')?.touched" class="text-danger">
+          El nombre es obligatorio.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="matricula" class="form-label">Matrícula</label>
+        <input type="text" id="matricula" class="form-control" formControlName="matricula" placeholder="Ej: 20231234" />
+        <div *ngIf="formularioEstudiante.get('matricula')?.invalid && formularioEstudiante.get('matricula')?.touched" class="text-danger">
+          La matrícula es obligatoria.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+        <input type="date" id="fechaNacimiento" class="form-control" formControlName="fechaNacimiento" />
+      </div>
+  
+      <div class="mb-3">
+        <label for="carrera" class="form-label">Carrera</label>
+        <select id="carrera" class="form-select" formControlName="carrera">
+          <option value="" disabled selected>Selecciona una carrera</option>
+          <option *ngFor="let carrera of carreras" [value]="carrera">{{ carrera }}</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo Electrónico</label>
+        <input type="email" id="correo" class="form-control" formControlName="correo" placeholder="Ej: juan.perez@universidad.com" />
+        <div *ngIf="formularioEstudiante.get('correo')?.invalid && formularioEstudiante.get('correo')?.touched" class="text-danger">
+          Ingresa un correo válido.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" id="telefono" class="form-control" formControlName="telefono" placeholder="Ej: 555-123-4567" />
+      </div>
+  
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary" [disabled]="formularioEstudiante.invalid">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+/* General */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Cambia la fuente global */
+}
+
+/* Fondo */
+.background-container {
+  background-image: url('https://s1.elespanol.com/2021/05/24/actualidad/583702491_186121580_1024x576.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+  border-radius: 10px;
+  padding: 2rem;
+  font-family: 'Verdana', sans-serif; /* Cambiar la fuente solo para el jumbotron */
+}
+
+/* Títulos principales */
+h1.display-4 {
+  color:   black !important; /* Verde para el título principal */
+  font-size: 3rem; /* Aumentar tamaño */
+  font-family: 'Georgia', serif; /* Cambiar a fuente serif */
+  font-weight: bold; /* Hacerlo en negrita */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+}
+
+/* Subtítulos */
+h2 {
+  color: #cc0b0b !important; /* Naranja para subtítulos */
+  font-size: 2.5rem; /* Aumentar tamaño */
+  font-family: 'Tahoma', sans-serif; /* Cambiar a fuente sans-serif */
+  font-weight: normal; /* Mantener peso normal */
+  margin-top: 1rem;
+}
+
+/* Párrafos */
+p {
+  font-size: 30px; /* Ajusta el tamaño del texto en píxeles */
+  line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+  margin-bottom: 15px; /* Espaciado entre párrafos */
+  color: red;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  font-family: 'Verdana', sans-serif; /* Cambiar fuente de botones */
+  font-size: 1rem; /* Tamaño de letra estándar */
+  font-weight: bold; /* Botones en negrita */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28A745;
+  border-color: #28A745;
+  font-family: 'Verdana', sans-serif; /* Cambiar fuente de botones */
+  font-size: 1rem; /* Tamaño de letra estándar */
+  font-weight: bold; /* Botones en negrita */
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+/* Cards */
+.card {
+  background-color: #127be4;
+  border: 1px solid #990e0e;
+  font-family: 'Helvetica', sans-serif; /* Cambiar la fuente de las cards */
+}
+
+.card-title {
+  color: #343a40;
+  font-size: 1.5rem; /* Aumentar tamaño de título de la card */
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 1.1rem; /* Tamaño de texto de la card */
+}
+
+/* Separador */
+hr {
+  border-color: #a80d0d;
+  opacity: 0.5;
+}
+
+/* Fuentes personalizadas */
+h1.display-4 {
+  font-size: 3rem; /* Aumentar tamaño */
+  font-family: 'Georgia', serif; /* Fuente serif */
+}
+
+.custom-paragraph {
+  color: red !important; /* Forzar el color rojo */
+  font-size: 20px; /* Opcional: ajustar tamaño */
+}
